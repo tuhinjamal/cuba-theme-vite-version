@@ -1,0 +1,53 @@
+/**=====================
+     77. Print CSS Start
+==========================**/
+
+@page {
+  size: legal;
+}
+@font-face {
+  /*   font-family: "Nikosh";
+
+  src: url("./fonts/Gilroy-Medium.ttf") format("ttf"); */
+  font-family: "Nikosh";
+
+  src: url("./Nikosh.ttf") format("ttf");
+}
+@media print {
+  #print {
+    font-family: "Nikosh";
+  }
+  .button-section,
+  .sidebar-wrapper,
+  .page-header,
+  .footer {
+    display: none;
+  }
+  thead {
+    display: table-row-group;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+
+  .signature {
+    width: 80px;
+  }
+  .btn-area {
+    display: none;
+  }
+  .table-bordered thead,
+  .table-bordered tbody,
+  .table-bordered tfoot,
+  .table-bordered tr,
+  .table-bordered td,
+  .table-bordered th {
+    border-color: #000;
+  }
+  #print-table .table {
+    height: 500px !important;
+  }
+}
+/**=====================
+    77. Print CSS Ends
+==========================**/
